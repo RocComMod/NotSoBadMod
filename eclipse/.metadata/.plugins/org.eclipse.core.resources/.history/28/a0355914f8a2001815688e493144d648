@@ -1,0 +1,15 @@
+package ru.mwb.testmod.tile_entity;
+
+import net.minecraft.tileentity.TileEntityChest;
+
+public class TileEntityTestChest extends TileEntityChest
+{
+	
+	private String customName;
+	
+	public TileEntityChest adjacentChestZNeg;
+    public TileEntityChest adjacentChestXPos;
+    public TileEntityChest adjacentChestXNeg;
+    public TileEntityChest adjacentChestZPos;
+	
+}

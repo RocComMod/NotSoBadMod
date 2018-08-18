@@ -1,0 +1,15 @@
+package ru.mwb.testmod.items;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemPickaxe;
+import ru.mwb.testmod.TestMod;
+
+public class hammerUltimet extends ItemPickaxe{
+
+	public hammerUltimet() 
+	{
+		super(TestMod.ultimet);
+		this.setTextureName("TestMod:TestPickaxe");
+	}
+
+}

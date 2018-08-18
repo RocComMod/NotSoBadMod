@@ -1,0 +1,27 @@
+package ru.mwb.testmod.mobs;
+
+import net.minecraft.entity.monster.EntityMob;
+import net.minecraft.entity.ai.EntityAIWander;
+import net.minecraft.world.World;
+
+public class EntityLilyLurkerMob extends EntityMob
+{
+
+	public EntityLilyLurkerMob(World par1World) 
+	{
+		super(par1World);
+		this.setSize(0.7F, 0.4F);
+		this.tasks.addTask(0, new EntityAIWander(this, 0.5D));
+	}
+	
+	public boolean isAIEnabled()
+	{
+		return true;
+	}
+	
+	protected void applyEntityAttributes()
+	{
+		
+	}
+	
+}

@@ -1,0 +1,5 @@
+package ru.mwb.testmod.dimension;
+
+public class WorldProviderTest {
+
+}

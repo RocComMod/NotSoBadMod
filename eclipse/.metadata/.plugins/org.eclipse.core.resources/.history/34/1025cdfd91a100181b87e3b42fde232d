@@ -1,0 +1,15 @@
+package ru.mwb.testmod.items;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemPickaxe;
+import ru.mwb.testmod.TestMod;
+
+public class testPickaxe extends ItemPickaxe{
+
+	protected testPickaxe(ToolMaterial p_i45347_1_) 
+	{
+		super(TestMod.testPickaxeMat);
+		this.setTextureName()
+	}
+
+}

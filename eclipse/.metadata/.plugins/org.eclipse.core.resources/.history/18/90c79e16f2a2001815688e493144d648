@@ -1,0 +1,69 @@
+package ru.mwb.testmod.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockPortal;
+import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.world.World;
+
+public class testPortal extends BlockPortal 
+{
+	
+	public testPortal()
+	{
+		super();
+	}
+	
+	/*public void updateTick(World world, int x, int y, int z, Random rand)
+	{
+		
+		
+		
+	}*/
+	
+	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
+	{
+		
+		return null;
+		
+	}
+	
+	public boolean renderAsNormalBlock()
+	{
+		
+		return false;
+		
+	}
+	
+	public void onNeighborBlockChange(World world, int x, int y, int z, Block block)
+	{
+		
+		byte b0 = 0;
+		byte b1 = 1;
+		
+		if(world.getBlock(x - 1, y, z) == TestBlock.testOre || world.getBlock(x + 1, y, z) == TestBlock.testOre)
+		{
+			
+			b0 = 0;
+			b1 = 1;
+			
+		}
+		
+		int i1;
+		
+		for(i1 = y; world.getBlock(x, i1, z) == this; --i1)
+		{
+			
+			
+			
+		}
+		
+		if(world.getBlock(x, i1 - 1, z) != TestBlock.testOre)
+		{
+			
+			world.setBlockToAir(x, y, z);
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,14 @@
+package ru.mwb.testmod.dimension;
+
+public class BiomeRegistry 
+{
+	
+	public static void mainRegistry()
+	{
+		
+		initializeBiome();
+		registerBiome();
+		
+	}
+	
+}

@@ -1,0 +1,15 @@
+package ru.mwb.testmod.dimension;
+
+public class dimensionRegistry 
+{
+	
+	public static void mainRegistry()
+	{
+		
+		registerDimension();
+		
+	}
+
+	public static void registerDimension()
+	
+}

@@ -1,0 +1,57 @@
+package ru.mwb.testmod;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.Mod.Metadata;
+import cpw.mods.fml.common.ModMetadata;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraftforge.common.util.EnumHelper;
+import ru.mwb.testmod.items.hammerUltimet;
+import ru.mwb.testmod.lib.Strings;
+
+@Mod(modid=Strings.MODID, version=Strings.VERSION, name=Strings.MODNAME)
+public class TestMod{
+	
+	@Metadata
+	public static ModMetadata meta;
+	
+	public static Block testOre;
+	
+	int testOreID = 500;
+	
+	@Instance(Strings.MODID)
+	public static TestMod modInstance;
+	
+	public static final ToolMaterial ultimet = EnumHelper.addToolMaterial("TESTMAT", 3, 4000, 6F, 6F, 3); //Свой материал (String name, int harvestLevel, int maxUses, float efficiency, float damage, int enchantability)
+
+	public static Item hammerUltimet;
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent preInit)
+	{
+		hammerUltimet = new hammerUltimet().setUnlocalizedName("hammerUltimet").setCreativeTab(CreativeTabs.tabTools);
+		GameRegistry.registerItem(hammerUltimet, "Ultimet Hammer");
+	}
+	
+	@EventHandler
+	public void init(FMLInitializationEvent init)
+	{
+		
+		testOre = new testOre(testOreID)
+		
+	}
+	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent postInit)
+	{
+		
+	}
+}

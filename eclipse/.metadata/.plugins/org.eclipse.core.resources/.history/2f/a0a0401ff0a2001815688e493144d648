@@ -1,0 +1,28 @@
+package ru.mwb.testmod.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class TestBlock 
+{
+	
+	public static void mainRegistry()
+	{
+		
+		initBlocks();
+		registerBlocks();
+		
+	}
+	
+	public static Block testOre;
+	public static Block testChest;
+	public static CreativeTabs testTab = new CreativeTabs("test")
+	{
+		public Item getTabIconItem()
+		{
+			return Item.getItemFromBlock(testOre);
+		}
+			};
+	
+}

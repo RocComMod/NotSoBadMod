@@ -1,0 +1,8 @@
+package ru.mwb.testmod.mobs;
+
+import net.minecraft.world.World;
+
+public class EntityLilyLurkerMob extends EntityMob
+{
+	
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "gpfuMod",
+  "name": "GPFUMod",
+  "description": "Mod, that adds random stuff.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["GPFU"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

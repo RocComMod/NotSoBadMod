@@ -1,0 +1,16 @@
+package ru.mwb.testmod.blocks;
+
+import net.minecraft.block.Block;
+
+public class testOre extends Block
+{
+	
+	public testOre(int id, Material mat)
+	{
+		
+		super(mat);
+		
+		
+	}
+	
+}

@@ -1,0 +1,32 @@
+package ru.mwb.testmod.dimension;
+
+import net.minecraft.world.WorldProvider;
+
+public class WorldProviderTest extends WorldProvider
+{
+	
+	public void registerWorldChunkManager()
+	{
+		
+		this.worldChunkMgr = new WorldChunkManagerHell(BiomeRegistry.biomeTest, 1.2F);
+		this.dimensionId = dimensionRegistry.dimensionId;
+		
+	}
+	
+	public IChunkProvider createChunkGeneration()
+	{
+		
+		
+	}
+
+	@Override
+	public String getDimensionName() 
+	{
+		
+		return null;
+		
+	}
+	
+	
+	
+}

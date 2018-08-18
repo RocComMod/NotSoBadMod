@@ -1,0 +1,17 @@
+package ru.mwb.testmod.tile_entity;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntityChest;
+
+public class TileEntityTestChest extends TileEntityChest
+{
+	
+	private String customName;
+	private ItemStack[] chestContents = new ItemStack[36];
+	
+	public TileEntityChest adjacentChestZNeg;
+    public TileEntityChest adjacentChestXPos;
+    public TileEntityChest adjacentChestXNeg;
+    public TileEntityChest adjacentChestZPos;
+	
+}

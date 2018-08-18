@@ -1,0 +1,17 @@
+package ru.mwb.testmod.blocks;
+
+public class TestBlock 
+{
+	
+	public static void mainRegistry()
+	{
+		
+		initBlocks();
+		registerBlocks();
+		
+	}
+	
+	public static Block testOre;
+	public static Block testChest;
+	
+}

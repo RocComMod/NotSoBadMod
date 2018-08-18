@@ -1,0 +1,5 @@
+package ru.mwb.testmod;
+
+public class ClientProxy {
+
+}

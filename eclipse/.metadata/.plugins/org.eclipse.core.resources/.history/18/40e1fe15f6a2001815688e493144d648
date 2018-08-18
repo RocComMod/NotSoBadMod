@@ -1,0 +1,15 @@
+package ru.mwb.testmod.blocks;
+
+import net.minecraft.block.BlockChest;
+
+public class testChest extends BlockChest
+{
+	
+	protected testChest(int chest)
+	{
+		
+		super(chest);
+		
+	}
+	
+}

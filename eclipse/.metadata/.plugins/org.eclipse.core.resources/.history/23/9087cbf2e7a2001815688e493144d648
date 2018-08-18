@@ -1,0 +1,6 @@
+package ru.mwb.testmod.mobs;
+
+public class EntityLilyLurkerMob extends EntityLilyLurker
+{
+
+}

@@ -1,0 +1,21 @@
+package ru.mwb.testmod;
+
+import cpw.mods.fml.client.registry.ClientRegistry;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.MinecraftForgeClient;
+import ru.mwb.testmod.blocks.TestBlock;
+import ru.mwb.testmod.renderer.TestChestRenderer;
+import ru.mwb.testmod.tile_entity.TileEntityTestChest;
+
+public class ClientProxy extends ServerProxy
+{
+	
+	public void registerRenderThings()
+	{
+		
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityTestChest.class, new TestChestRenderer());
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(TestBlock.testChest), new ItemRendererTestChest());
+		
+	}
+	
+}

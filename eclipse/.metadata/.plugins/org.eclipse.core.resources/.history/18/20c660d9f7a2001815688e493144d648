@@ -1,0 +1,7 @@
+package ru.mwb.testmod.tile_entity;
+
+import net.minecraft.tileentity.TileEntityChest;
+
+public class TileEntityTestChest extends TileEntityChest{
+
+}

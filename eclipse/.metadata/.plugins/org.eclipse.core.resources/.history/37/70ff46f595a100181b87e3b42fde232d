@@ -1,0 +1,15 @@
+package ru.mwb.testmod.items;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemPickaxe;
+import ru.mwb.testmod.TestMod;
+
+public class hammerDiamond extends ItemPickaxe{
+
+	public hammerDiamond() 
+	{
+		super(TestMod.testPickaxeMat);
+		this.setTextureName("TestMod:TestPickaxe");
+	}
+
+}

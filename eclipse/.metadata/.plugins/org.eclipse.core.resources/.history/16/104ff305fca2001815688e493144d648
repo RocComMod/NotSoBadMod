@@ -1,0 +1,17 @@
+package ru.mwb.testmod;
+
+import cpw.mods.fml.client.registry.ClientRegistry;
+import ru.mwb.testmod.renderer.TestChestRenderer;
+import ru.mwb.testmod.tile_entity.TileEntityTestChest;
+
+public class ClientProxy extends ServerProxy
+{
+	
+	public void registerRenderThings()
+	{
+		
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityTestChest.class, new TestChestRenderer());
+		
+	}
+	
+}

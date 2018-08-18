@@ -1,0 +1,8 @@
+package ru.mwb.testmod.blocks;
+
+public class testOre extends Block
+{
+	
+	
+	
+}

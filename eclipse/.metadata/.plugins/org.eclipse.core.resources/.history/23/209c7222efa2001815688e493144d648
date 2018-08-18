@@ -1,0 +1,30 @@
+package ru.mwb.testmod.dimension;
+
+import net.minecraft.world.biome.BiomeGenBase;
+
+public class BiomeRegistry 
+{
+	
+	public static void mainRegistry()
+	{
+		
+		initializeBiome();
+		registerBiome();
+		
+	}
+	
+	public static BiomeGenBase biomeTest;
+	
+	public static void initializeBiome()
+	{
+		
+		biomeTest = new BiomeGenTest(137).setBiomeName("Test").setTemperatureRainfall(1.2F, 0.9F);
+		
+	}
+	
+	public static void registerBiome()
+	{
+		
+	}
+	
+}

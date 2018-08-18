@@ -1,0 +1,25 @@
+package ru.mwb.testmod.mobs;
+
+import cpw.mods.fml.common.registry.EntityRegistry;
+import ru.mwb.testmod.TestMod;
+
+public class EntityLilyLurker 
+{
+	public static void mainRegistry()
+	{
+		registerEntity();
+	}
+	
+	public static void registerEntity()
+	{
+		
+	}
+	
+	public static void createEntity(Class entityClass, String entityName, int solidColor, int spotColor)
+	{
+		int randomId = EntityRegistry.findGlobalUniqueEntityId();
+		EntityRegistry.registerGlobalEntityID(entityClass, entityName, randomId);
+		EntityRegistry.registerModEntity(entityClass, entityName, randomId, TestMod.modInstance, 64, 1, true);
+		EntityRegistry.addSpawn(entityClass, 2, 0, 1, typeOfCreature, biomes);
+	}
+}
